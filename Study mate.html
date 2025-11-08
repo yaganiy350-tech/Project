@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Mate - Complete UI Design Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Hedvig+Letters+Sans&family=Jersey+15&family=Jersey+20+Charted&family=Liter&family=Luckiest+Guy&family=Oranienbaum&family=Press+Start+2P&family=Quattrocento+Sans&family=Sorts+Mill+Goudy&family=Unna&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Liter', serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #4ADE80 0%, #00B894 100%);
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .screen-mockup {
+            background: #1a1a1a;
+            border-radius: 24px;
+            padding: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .screen-inner {
+            background: #000;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #4ADE80;
+        }
+    </style>
+<base target="_blank">
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="study_mate_logo.png" alt="Study Mate" class="w-10 h-10">
+                    <span class="text-2xl font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Study Mate</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="nav-link text-gray-600 hover:text-gray-800">Features</a>
+                    <a href="#ui-showcase" class="nav-link text-gray-600 hover:text-gray-800">UI Showcase</a>
+                    <a href="#design" class="nav-link text-gray-600 hover:text-gray-800">Design System</a>
+                    <a href="#experience" class="nav-link text-gray-600 hover:text-gray-800">User Experience</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-24 pb-16 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6" style="font-family: 'Quattrocento Sans', sans-serif;">
+                        Complete UI Design<br>
+                        <span class="text-white/90">Showcase</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-white/90" style="font-family: 'Liter', serif;">
+                        Explore every screen, feature, and design detail of Study Mate - the modern student's toolkit for academic success.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                            <span class="text-sm font-medium">12+ Screens</span>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                            <span class="text-sm font-medium">Complete Flow</span>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                            <span class="text-sm font-medium">Dark & Light Mode</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="screen-mockup">
+                        <div class="screen-inner">
+                            <img src="study_mate_dashboard.png" alt="Study Mate Dashboard" class="w-64 h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Features Overview -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Quattrocento Sans', sans-serif;">Core Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" style="font-family: 'Liter', serif;">
+                    Every feature designed with student success in mind - from intelligent planning to collaborative learning.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-alt text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Quattrocento Sans', sans-serif;">Smart Study Planner</h3>
+                    <p class="text-gray-600" style="font-family: 'Liter', serif;">AI-powered scheduling that creates personalized study plans based on your courses, deadlines, and optimal learning patterns.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-stopwatch text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Quattrocento Sans', sans-serif;">Pomodoro Timer</h3>
+                    <p class="text-gray-600" style="font-family: 'Liter', serif;">Focus mode with customizable timer sessions, ambient soundscapes, and distraction blocking for deep concentration.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Quattrocento Sans', sans-serif;">Study Groups</h3>
+                    <p class="text-gray-600" style="font-family: 'Liter', serif;">Collaborative learning spaces with real-time chat, file sharing, and virtual study sessions for peer support.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Quattrocento Sans', sans-serif;">Progress Analytics</h3>
+                    <p class="text-gray-600" style="font-family: 'Liter', serif;">Comprehensive insights into study patterns, performance trends, and productivity metrics with personalized recommendations.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tasks text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Quattrocento Sans', sans-serif;">Task Management</h3>
+                    <p class="text-gray-600" style="font-family: 'Liter', serif;">Advanced task organization with project breakdown, priority setting, and seamless workflow integration.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-medal text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3" style="font-family: 'Quattrocento Sans', sans-serif;">Achievement System</h3>
+                    <p class="text-gray-600" style="font-family: 'Liter', serif;">Gamified learning experience with badges, streaks, and milestones to maintain motivation and engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI Showcase -->
+    <section id="ui-showcase" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Quattrocento Sans', sans-serif;">Complete UI Showcase</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" style="font-family: 'Liter', serif;">
+                    Every screen designed for intuitive navigation, visual clarity, and optimal user experience.
+                </p>
+            </div>
+
+            <!-- Splash & Onboarding -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center" style="font-family: 'Quattrocento Sans', sans-serif;">Splash & Onboarding</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="splash_screen.png" alt="Splash Screen" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Splash Screen</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Clean welcome with smooth animations</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="onboarding_screen.png" alt="Onboarding" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Onboarding</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Feature introduction and setup</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="login_screen.png" alt="Login" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Login/Signup</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Secure authentication flow</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Features -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center" style="font-family: 'Quattrocento Sans', sans-serif;">Core Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="study_mate_dashboard.png" alt="Dashboard" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Dashboard</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Central command center</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="planner_screen.png" alt="Study Planner" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Study Planner</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Intelligent scheduling system</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="study_mate_timer.png" alt="Pomodoro Timer" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Pomodoro Timer</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Focus mode with analytics</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="tasks_screen.png" alt="Task Management" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Task Management</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Advanced organization system</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="study_mate_groups.png" alt="Study Groups" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Study Groups</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Collaborative learning spaces</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="progress_screen.png" alt="Progress Tracking" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Progress Analytics</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Performance insights & trends</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile & Settings -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center" style="font-family: 'Quattrocento Sans', sans-serif;">Profile & Settings</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="profile_screen.png" alt="Profile & Settings" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Profile & Settings</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Personalization & preferences</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="screen-mockup mb-4">
+                            <div class="screen-inner">
+                                <img src="dark_mode_screen.png" alt="Dark Mode" class="w-64 h-auto">
+                            </div>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Dark Mode</h4>
+                        <p class="text-sm text-gray-600 text-center" style="font-family: 'Liter', serif;">Eye-friendly dark theme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design System -->
+    <section id="design" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Quattrocento Sans', sans-serif;">Design System</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" style="font-family: 'Liter', serif;">
+                    A cohesive design language built for clarity, focus, and student success.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6" style="font-family: 'Quattrocento Sans', sans-serif;">Color Palette</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-[#4ADE80] rounded-lg shadow-md"></div>
+                            <div>
+                                <p class="font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Primary Green</p>
+                                <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">#4ADE80 - Growth, productivity, focus</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-[#2D3436] rounded-lg shadow-md"></div>
+                            <div>
+                                <p class="font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Dark Gray</p>
+                                <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">#2D3436 - Text, structure, stability</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-white border-2 border-gray-200 rounded-lg shadow-md"></div>
+                            <div>
+                                <p class="font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Pure White</p>
+                                <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">#FFFFFF - Clarity, space, simplicity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6" style="font-family: 'Quattrocento Sans', sans-serif;">Typography</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-sm text-gray-600 mb-2" style="font-family: 'Liter', serif;">HEADINGS</p>
+                            <p class="text-4xl font-bold text-gray-800" style="font-family: 'Quattrocento Sans', sans-serif;">Quattrocento Sans</p>
+                            <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">Bold, impactful, modern - used for all headings and navigation</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600 mb-2" style="font-family: 'Liter', serif;">BODY TEXT</p>
+                            <p class="text-xl text-gray-800" style="font-family: 'Liter', serif;">Liter - Clean, readable, professional</p>
+                            <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">Optimal readability for extended reading sessions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo & Brand Elements -->
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8" style="font-family: 'Quattrocento Sans', sans-serif;">Brand Elements</h3>
+                <div class="flex flex-col items-center">
+                    <img src="study_mate_logo.png" alt="Study Mate Logo" class="w-32 h-32 mb-6">
+                    <p class="text-lg text-gray-700 max-w-2xl mx-auto" style="font-family: 'Liter', serif;">
+                        The Study Mate logo combines a stylized book with an upward growth arrow, symbolizing academic progress and continuous learning. The clean geometric design represents modern educational technology while maintaining approachability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Experience -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Quattrocento Sans', sans-serif;">User Experience</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" style="font-family: 'Liter', serif;">
+                    Every interaction designed to reduce cognitive load and enhance learning effectiveness.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2" style="font-family: 'Quattrocento Sans', sans-serif;">Cognitive Load Reduction</h3>
+                    <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">Clean interfaces that minimize distractions and focus attention on learning tasks.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-route text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2" style="font-family: 'Quattrocento Sans', sans-serif;">Intuitive Navigation</h3>
+                    <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">Logical information architecture that makes features easily discoverable and accessible.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-magic text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2" style="font-family: 'Quattrocento Sans', sans-serif;">Micro-Interactions</h3>
+                    <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">Delightful animations and feedback that make the app feel responsive and alive.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-universal-access text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2" style="font-family: 'Quattrocento Sans', sans-serif;">Accessibility First</h3>
+                    <p class="text-sm text-gray-600" style="font-family: 'Liter', serif;">High contrast ratios, readable fonts, and intuitive gestures for all users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 hero-bg text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <i class="fas fa-graduation-cap text-6xl mb-6 opacity-90"></i>
+            <h2 class="text-4xl font-bold mb-4" style="font-family: 'Quattrocento Sans', sans-serif;">Experience Study Mate</h2>
+            <p class="text-xl mb-8 opacity-90" style="font-family: 'Liter', serif;">
+                Thoughtfully designed interface that makes learning more efficient, engaging, and enjoyable.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <span class="font-medium">Intuitive Design</span>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <span class="font-medium">Student-Focused</span>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
+                    <span class="font-medium">Proven Results</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <img src="study_mate_logo.png" alt="Study Mate" class="w-8 h-8">
+                    <span class="text-xl font-bold" style="font-family: 'Quattrocento Sans', sans-serif;">Study Mate</span>
+                </div>
+                <p class="text-gray-400 text-sm" style="font-family: 'Liter', serif;">
+                    © 2025 Study Mate. Designed for student success.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white/90');
+            } else {
+                nav.classList.add('bg-white/90');
+                nav.classList.remove('bg-white/95');
+            }
+        });
+    </script>
+</body>
+</html>
